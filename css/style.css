@@ -9,28 +9,40 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 20px;
 }
 ul {
     display: flex; 
 }
 header nav ul li {
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 22px;
+    
+}
+header nav ul li a {
+    color: #1C4961;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+    
 }
 .logo img {
-    width: 17px;
-    height: 17px;
+    width: 27px;
+    height: 27px;
 }
 .logo span {
     font-size: 20px;
     color: #4468E2;
+    margin-left: 5px;
 }
 header button {
     border: none;
     background-color: #4468E2;
     color: #fff;
     border-radius: 17px;
+    font-size: 19px;
+    padding: 10px;
 }
 
 /* slider section starts */
@@ -46,17 +58,17 @@ header button {
 }
 .main-title {
     position: absolute;
-    max-width: 400px;
+    max-width: 522px;
     width: 100%;
 }
 .main-title h1 {
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
     
 }
 .main-title p {
-    font-size: 12px;
+    font-size: 22px;
     color: white;
     text-align: center;
 }
@@ -70,12 +82,12 @@ header button {
     justify-content: space-between;
 }
 .choose-travel-date div h5 {
-    font-size: 12px;
+    font-size: 20px;
     /* padding: 10px; */
 }
 .choose-travel-date div input {
     border: none;
-    font-size: 7px;
+    font-size: 16px;
 }
 .choose-travel-date div input:focus {
     
@@ -84,7 +96,7 @@ header button {
     margin: 5px;
 }
 .choose-travel-date div p {
-    font-size: 10px;
+    font-size: 16px;
     color: #7E7E7E;
 }
 .location {
@@ -95,8 +107,8 @@ header button {
     /* height: 100%; */
 }
 .location img {
-    width: 8px;
-    height: 8px;
+    width: 13px;
+    height: 13px;
     cursor: pointer;
 }
 .check-in {
@@ -162,14 +174,20 @@ header button {
     display: flex;
     justify-content: center;
     /* align-items: center; */
+    margin-top: 50px;
 }
 .destination-line div {
-    /* width: calc(100%/3); */
-    border: 1px solid black;
+    
+   
     margin-left: 5px;
     margin-top: 5px;
+    max-width: 552px;
+    width: 100%;
     /* width: 100px;
     height: 100px; */
+}
+.destination-line div img {
+    width: 100%;
 }
 .reccomndation h1 {
     font-size: 40px;
@@ -181,4 +199,136 @@ header button {
 } */
 .reccomndation nav ul li {
     margin-left: 30px;
+    font-size: 26px;
+}
+.destination-line div h6 {
+    font-size: 38px;
+}
+.destination-line div p {
+    font-size: 26px;
+    padding: 5px;
+}
+.price-all {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.travel-icons div {
+    width: 33px;
+    height: 33px;
+    background-color: #1C4961;
+    border-radius: 50%;
+}
+.price-all span {
+    font-size: 31px;
+}
+/* .price-all div div {
+    margin-left: 5px;
+} */
+.travel-icons {
+    display: flex;
+    
+}
+.price-travel {
+    display: flex;
+    justify-content: center;
+}
+.night-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.night-info p {
+    font-size: 22px;
+}
+/* blog section starts */
+
+.blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.blog h1 {
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+.pic-first-box, .pic-second-box{
+    width: 50%;
+
+}
+.pic-first-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic-first-box p {
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    width: 45%;
+}
+.pictures {
+    display: flex;
+}
+.pictures div img {
+    width: 100%;
+    height: 100%;
+}
+.pic-second-box div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic-second-box div p {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+
+}
+.feedback {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedback h1 {
+    font-size: 40px;
+
+}
+.customer-review {
+    display: flex;
+    margin-top: 60px;
+}
+.first-review {
+    width: 50%;
+    
+}
+.first-review div {
+    display: flex;
+}
+.first-review-text img {
+    width: 53px;
+    height: 42px;
+}
+.costumer div {
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+}
+.costumer {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.first-review-text p {
+    width: 80%;
+    margin-left: 5%;
 }
