@@ -83,11 +83,11 @@ header button {
     height: 80px;
     align-items: center;
 }
-.choose-travel-date div h5 {
+/* .choose-travel-date div h5 {
     font-size: 20px;
-    /* padding: 10px; */
-}
-.choose-travel-date div input {
+   
+} */
+.location input {
     border: none;
     font-size: 16px;
 }
@@ -95,7 +95,7 @@ header button {
 .choose-travel-date div {
     margin: 5px;
 }
-.choose-travel-date div p {
+.check-in p, .Check-out p {
     font-size: 16px;
     color: #7E7E7E;
 }
@@ -105,6 +105,10 @@ header button {
     width: 30%;
     /* background-color: aqua; */
     /* height: 100%; */
+}
+.location h5, .check-in h5, .Check-out h5 {
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 .location img {
     width: 13px;
@@ -116,6 +120,7 @@ header button {
     width: 15%;
     /* padding: 10px ; */
 }
+
 .choose-travel-date button {
     background-color: #4468E2;
     color: #fff;
@@ -139,7 +144,7 @@ header button {
     display: flex;
     flex-direction: column;
     align-content: center;
-    box-shadow: 0 0 20px grey;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     
 }
 
@@ -203,6 +208,7 @@ header button {
 .reccomndation h1 {
     font-size: 40px;
     margin-bottom: 80px;
+    font-weight: bold;
 }
 /* .reccomndation nav ul {
     display: flex;
@@ -267,6 +273,7 @@ header button {
 .blog h1 {
     font-size: 40px;
     margin-bottom: 70px;
+    font-weight: bold;
 }
 .pic-first-box, .pic-second-box{
     width: 50%;
@@ -280,7 +287,8 @@ header button {
 }
 .pic-first-box p {
     position: absolute;
-    font-size: 50px;
+    font-size: 4vw;
+    font-weight: bold;
     color: #fff;
     width: 45%;
 }
@@ -300,7 +308,8 @@ header button {
 .pic-second-box div p {
     position: absolute;
     color: #fff;
-    font-size: 35px;
+    font-size: 3vw;
+    font-weight: bold;
 
 }
 .feedback {
@@ -313,18 +322,35 @@ header button {
 }
 .feedback h1 {
     font-size: 40px;
-
+    font-weight: bold;
 }
 .customer-review {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 60px;
 }
 .first-review {
-    width: 50%;
-    
+   
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 417px;
+    width: 700px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    /* margin-left: 78px; */
+}
+.second-review {
+    margin-left: 30px;
 }
 .first-review div {
     display: flex;
+}
+.first-review-text {
+    display: flex;
+    justify-content: center;
 }
 .first-review-text img {
     width: 53px;
@@ -334,6 +360,13 @@ header button {
    display: flex;
    flex-direction: column;
    margin-left: 20px;
+}
+.costumer div h6 {
+    font-size: 28px;
+}
+.costumer div p {
+    font-size: 28px;
+    color: #848484;
 }
 .costumer {
     display: flex;
@@ -345,6 +378,7 @@ header button {
 .first-review-text p {
     width: 80%;
     margin-left: 5%;
+    font-size: 26px;
 }
 /* footer starts */
 footer {
@@ -359,4 +393,37 @@ footer {
 footer nav ul li{
    margin-left: 15px;
 }
-   
+
+/* რესფონსივი */
+@media (max-width: 1024px){
+    .main-title h1 {
+        font-size: 40px;
+    }
+    .main-title p{
+        font-size: 15px;
+    }
+    .location h5, .check-in h5, .Check-out h5{
+        font-size: 15px;
+        
+    }
+    .location input, .check-in p, .Check-out p {
+        font-size: 10px;
+    }
+    .location img {
+        width: 10px;
+        height: 10px;
+    }
+    .offer-box {
+        margin-top: 20px;
+    }
+    .reccomndation nav ul li {
+        font-size: 15px;
+    }
+    /* .pic-first-box p {
+        font-size: 35px;
+    } */
+    .second-review {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
