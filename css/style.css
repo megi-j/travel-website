@@ -221,7 +221,7 @@ header button {
     margin-bottom: 79px;
 }
 .new-zealand, .bora-bora, .london {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 .reccomndation nav ul {
     display: flex;
@@ -469,12 +469,10 @@ footer div p {
     }
 }
 @media (max-width: 480px){
-    .main-title p, .choose-travel-date, footer nav, header nav, .main-title h1 {
+    .main-title p, .choose-travel-date, footer nav, header nav, .main-title h1, .location-hidden h5 {
         display: none;
     }
-    /* .main-title h1 {
-        padding: 10px;
-    } */
+    
     .choose-travel-date-hidden, .burger-div, .burger-div-header {
         display: block;
     }
