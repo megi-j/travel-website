@@ -58,7 +58,6 @@ header button {
 }
 .main-title {
     position: absolute;
-   
     width: 45%; 
 }
 .main-title h1 {
@@ -148,11 +147,11 @@ header button {
     
 }
 
-.offer div  img {
+/* .best-price-pic {
     width: 53px;
     height: 67px;  
     
-} 
+}  */
 .offer div div {
     width: 103px;
     height: 97px;
@@ -166,12 +165,13 @@ header button {
     margin-top: 15px;
 }
 .offer div h4 {
-    font-size: 24px;
+    font-size: 2vw;
     margin-bottom: 10px;
-    padding-left: 15px;     
+    padding-left: 15px;    
+    font-weight: bold; 
 }
 .offer div p {
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-bottom: 10px;
     padding-left: 15px;
 }
@@ -209,6 +209,9 @@ header button {
     font-size: 3vw;
     /* margin-bottom: 80px; */
     font-weight: bold;
+}
+.reccomndation h1 {
+    margin-bottom: 79px;
 }
 /* .reccomndation nav ul {
     display: flex;
@@ -377,10 +380,10 @@ header button {
    margin-left: 20px;
 }
 .costumer div h6 {
-    font-size: 28px;
+    font-size: 2vw;
 }
 .costumer div p {
-    font-size: 28px;
+    font-size: 1.8vw;
     color: #848484;
 }
 .costumer {
@@ -402,11 +405,13 @@ footer {
     border-radius: 18px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 100px;
     padding: 20px;
 }
 footer nav ul {
     display: flex;
+    justify-content: center;
 }
 footer nav ul li{
    margin-left: 20px;
@@ -421,22 +426,16 @@ footer nav ul li{
     height: 44px;
     
 }
+footer nav ul li{
+    font-size: 1.3vw;
+}
+footer div p {
+    font-size: 1.3vw;
+}
 
 /* რესფონსივი */
 @media (max-width: 1024px){
-    /* .main-title h1 {
-        font-size: 40px;
-    }
-    .main-title p{
-        font-size: 15px;
-    }
-    .location h5, .check-in h5, .Check-out h5{
-        font-size: 15px;
-        
-    }
-    .location input, .check-in p, .Check-out p {
-        font-size: 10px;
-    } */
+   
     .location img {
         width: 10px;
         height: 10px;
@@ -447,9 +446,7 @@ footer nav ul li{
     .reccomndation nav ul li {
         font-size: 1vw;
     }
-    /* .pic-first-box p {
-        font-size: 35px;
-    } */
+   
     .second-review {
         margin-left: 0;
         margin-top: 20px;
