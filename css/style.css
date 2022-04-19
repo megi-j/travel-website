@@ -16,8 +16,17 @@ header nav ul {
 }
 header nav ul li {
     margin-right: 30px;
-    font-size: 1.5vw;
+    font-size: calc(10px +1vw);
     
+}
+.burger-div-header {
+    display: none;
+}
+.burger-header {
+    width: 30px;
+    height: 3px;
+    background-color: #1C4961;
+    margin: 6px 0;
 }
 header nav ul li a {
     color: #1C4961;
@@ -32,7 +41,7 @@ header nav ul li a {
     height: 27px;
 }
 .logo span {
-    font-size: 20px;
+    font-size: calc(10px + 1vw);
     color: #4468E2;
     margin-left: 5px;
 }
@@ -41,7 +50,7 @@ header button {
     background-color: #4468E2;
     color: #fff;
     border-radius: 17px;
-    font-size: 1.5vw;
+    font-size: calc(10px +1vw);
     padding: 10px;
 }
 
@@ -59,6 +68,7 @@ header button {
 .main-title {
     position: absolute;
     width: 45%; 
+  
 }
 .main-title h1 {
     color: #fff;
@@ -66,7 +76,7 @@ header button {
     font-family: 'Montserrat';
 }
 .main-title p {
-    font-size: 1.5vw;
+    font-size: calc(8px + 1vw);
     color: white;
     text-align: center;
 }
@@ -78,35 +88,40 @@ header button {
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
-    height: 80px;
     align-items: center;
 }
-/* .choose-travel-date div h5 {
-    font-size: 20px;
-   
-} */
-.location input {
-    border: none;
-    font-size: 1vw;
+.choose-travel-date-hidden {
+    width: 40%;
+    bottom: 5px;
+    position: absolute;
+    display: none;
 }
-
+.location-hidden, .check-in-hidden, .Check-out-hidden {
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+    opacity: 0.5;
+    border-radius: 5px;
+    padding: 5px;
+}
+.location input, .location-hidden input {
+    border: none;
+    font-size: calc(8px + 0.3vw);
+}
 .choose-travel-date div {
     margin: 5px;
 }
-.check-in p, .Check-out p {
-    font-size: 1vw;
+.check-in p, .check-out p, .check-in-hidden p, .Check-out-hidden p {
+    font-size: calc(8px + 0.3vw);
     color: #7E7E7E;
 }
 .location {
     padding-left: 10px;
     border-right: 0.5px solid #B4C6EE;
-    width: 30%;
-    /* background-color: aqua; */
-    /* height: 100%; */
+    width: 30%; 
 }
-.location h5, .check-in h5, .Check-out h5 {
-    margin-bottom: 10px;
-    font-size: 1.4vw;
+.location h5, .check-in h5, .check-out h5, .location-hidden h5, .check-in-hidden h5, .Check-out-hidden h5 {
+    font-size: calc(5px + 0.5vw);
 }
 .location img {
     width: 13px;
@@ -115,10 +130,15 @@ header button {
 }
 .check-in {
     border-right: 0.5px solid #B4C6EE;
-    width: 15%;
-    /* padding: 10px ; */
+    width: 15%; 
 }
-
+.choose-travel-date-hidden button {
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: calc(8px + 0.5vw);
+    opacity: 0.7;
+}
 .choose-travel-date button {
     background-color: #4468E2;
     color: #fff;
@@ -133,7 +153,7 @@ header button {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 170px;
+    margin-top: 100px;
     flex-wrap: wrap;
 }
 .offer-box {
@@ -143,15 +163,9 @@ header button {
     display: flex;
     flex-direction: column;
     align-content: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     
 }
-
-/* .best-price-pic {
-    width: 53px;
-    height: 67px;  
-    
-}  */
 .offer div div {
     width: 103px;
     height: 97px;
@@ -165,13 +179,13 @@ header button {
     margin-top: 15px;
 }
 .offer div h4 {
-    font-size: 2vw;
+    font-size: calc(12px + 1vw);
     margin-bottom: 10px;
     padding-left: 15px;    
     font-weight: bold; 
 }
 .offer div p {
-    font-size: 1.5vw;
+    font-size: calc(8px + 1vw);
     margin-bottom: 10px;
     padding-left: 15px;
 }
@@ -193,21 +207,14 @@ header button {
     margin-bottom: 100px;
 }
 .destination-line div {
-    
-   
-    /* margin-left: 10px; */
-    /* margin-top: 5px; */
-    width: 490px;
-    
-    /* width: 100px;
-    height: 100px; */
+    max-width: 490px;
+    width: 100%;
 }
 .destination-line div img {
     width: 100%;
 }
 .reccomndation h1, .blog h1, .feedback h1, .main-title h1 {
-    font-size: 3vw;
-    /* margin-bottom: 80px; */
+    font-size: calc(20px + 1vw);
     font-weight: bold;
 }
 .reccomndation h1 {
@@ -223,7 +230,7 @@ header button {
 }
 .reccomndation nav ul li {
     margin-left: 30px;
-    font-size: 1.5vw;
+    font-size: calc(5px + 0.8vw);
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -234,12 +241,12 @@ header button {
    border-bottom: 5px solid #163235;
 }
 .destination-line div h6 {
-    font-size: 2vw;
+    font-size: calc(18px + 1vw);
     padding: 20px;
     font-weight: bold;
 }
 .destination-line div p {
-    font-size: 1.5vw;
+    font-size: calc(10px + 1vw);
     padding: 20px;
 }
 .destination-box {
@@ -258,11 +265,8 @@ header button {
     border-radius: 50%;
 }
 .price-all span {
-    font-size: 1.8vw;
+    font-size: calc(15px + 1vw);
 }
-/* .price-all div div {
-    margin-left: 5px;
-} */
 .travel-icons {
     display: flex;
     
@@ -287,7 +291,7 @@ header button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    
 }
 .blog h1 {
     margin-bottom: 70px;
@@ -345,19 +349,18 @@ header button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 60px;
 }
 .first-review {
    
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     height: 417px;
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* margin-left: 78px; */
 }
 .second-review {
     margin-left: 30px;
@@ -379,15 +382,14 @@ header button {
    margin-left: 20px;
 }
 .costumer div h6 {
-    font-size: 2vw;
+    font-size: calc(20px +1vw);
 }
 .costumer div p {
-    font-size: 1.8vw;
+    font-size: calc(15px + 1vw);
     color: #848484;
 }
 .costumer {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     margin-left: 10%;
     margin-top: 30px;
@@ -395,7 +397,7 @@ header button {
 .first-review-text p {
     width: 80%;
     margin-left: 5%;
-    font-size: 26px;
+    font-size: calc(20px +1vw);
 }
 /* footer starts */
 footer {
@@ -416,20 +418,30 @@ footer nav ul li{
    margin-left: 20px;
 }
 .social-icons {
-    width: 150px;
+    /* max-width: 200px; */
     display: flex;
     justify-content: space-between;
 }
 .social-icons a img{
     width: 44px;
     height: 44px;
-    
+    margin-right: 10px;
 }
 footer nav ul li{
     font-size: 1.3vw;
 }
 footer div p {
     font-size: 1.3vw;
+}
+.burger {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+  
+}
+.burger-div {
+    display: none;
 }
 
 /* რესფონსივი */
@@ -442,10 +454,7 @@ footer div p {
     .offer-box {
         margin-top: 20px;
     }
-    .reccomndation nav ul li {
-        font-size: 1vw;
-    }
-   
+    
     .second-review {
         margin-left: 0;
         margin-top: 20px;
@@ -458,4 +467,26 @@ footer div p {
         height: 35px;
         
     }
+}
+@media (max-width: 480px){
+    .main-title p, .choose-travel-date, footer nav, header nav, .main-title h1 {
+        display: none;
+    }
+    /* .main-title h1 {
+        padding: 10px;
+    } */
+    .choose-travel-date-hidden, .burger-div, .burger-div-header {
+        display: block;
+    }
+    .choose-travel-date-hidden {
+       justify-content: flex-end;
+        align-items: flex-start;
+    }
+    
+    .social-icons a img{
+        width: 20px;
+        height: 20px;
+    }
+    
+    
 }
