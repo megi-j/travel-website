@@ -55,7 +55,7 @@ header button {
 }
 .block {
     display: block;
-}
+} 
 /* .opacity {
     opacity: 1;
 } */
@@ -67,23 +67,24 @@ header button {
     bottom: 0;
     z-index: 2;
     transition: all 2s;
-    
+    display: none;
 }
-.navigation nav ul {
+.navigation ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
-    transition: all 2s;
+    /* transition: all 2s; */
 }
-.navigation nav {
+/* .navigation nav {
+    display: none;
     transition: all 2s;
-}
-.navigation nav ul li a {
+} */
+.navigation ul li a {
     color: black;
     font-weight: bold;
 }
-.navigation nav ul li{
+.navigation ul li{
     margin-bottom: 10px;
     margin-top: 5px;
     margin-left: 5px;
